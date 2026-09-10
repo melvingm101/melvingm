@@ -6,7 +6,13 @@ export default defineConfig({
   plugins: [tsconfigPaths(), react()],
   test: {
     coverage: {
-      provider: 'v8'
+      provider: 'v8',
+      thresholds: {
+        lines: 70,
+        functions: 70,
+        branches: 65,
+        statements: 70,
+      },
     },
     environment: 'jsdom',
   },
