@@ -7,7 +7,7 @@ interface ButtonElementProps {
 
 const ButtonElement = ({ element }: ButtonElementProps) => {
   return (
-    <button id={element.id}>
+    <button id={element.id} data-testid={element.id}>
       {element.children.map(child => constructElement(child, true))}
     </button>
   )

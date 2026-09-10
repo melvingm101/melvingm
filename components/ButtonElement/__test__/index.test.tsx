@@ -19,7 +19,7 @@ describe("Button", () => {
     id: "testbutton"
   }
 
-  test('Button', () => {
+  test('snapshots', () => {
     render(<ButtonElement element={element} />)
     expect(screen).toMatchSnapshot()
   })

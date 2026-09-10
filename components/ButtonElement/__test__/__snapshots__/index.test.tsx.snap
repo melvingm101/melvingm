@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Button > Button 1`] = `
+exports[`Button > snapshots 1`] = `
 {
   "debug": [Function],
   "findAllByAltText": [Function],
