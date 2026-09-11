@@ -1,8 +1,13 @@
 import { WebsiteElement } from "@/types/element";
 
-const TextElement = ({ element }: { element: WebsiteElement }) => {
+interface TextElementProps {
+  element: WebsiteElement,
+  key?: string | null | undefined
+}
+
+const TextElement = ({ element, key }: TextElementProps) => {
   return (
-    <div id={element.id} className={element.className} data-testid={element.id}>
+    <div id={element.id} className={element.className} data-testid={element.id} key={key}>
       {element.text}
     </div>
   )

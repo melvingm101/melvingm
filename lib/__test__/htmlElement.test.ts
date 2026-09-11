@@ -5,6 +5,7 @@ import { constructElement } from "../htmlElement"
 import ButtonElement from '@/components/ButtonElement'
 import HeadingElement from '@/components/HeadingElement'
 import TextElement from '@/components/TextElement'
+import ContainerElement from '@/components/ContainerElement'
  
 describe("constructElement", () => {
   const element: ComponentProps<typeof ButtonElement>['element'] = {
@@ -41,6 +42,28 @@ describe("constructElement", () => {
     render(container);
     const heading = screen.getByTestId("topHeading");
     expect(heading.tagName).toBe("H2");
+  })
+
+  test('if container element renders when type is set to Container', () => {
+    const containerElement: ComponentProps<typeof ContainerElement>['element'] = {
+      type: "Container",
+      id: "containerTest",
+      children: [
+        {
+          type: "Text",
+          id: "containerTestText",
+          className: "text-center",
+          children: [],
+          text: "Test text"
+        }
+      ],
+      className: "font-bold text-2xl"
+    }
+    const container = constructElement(containerElement)
+    render(container);
+    const containerTest = screen.getByTestId("containerTest");
+    expect(containerTest).toBeDefined();
+    expect(containerTest.tagName).toBe("DIV");
   })
 
   test('if text element is rendered by default', () => {
