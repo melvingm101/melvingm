@@ -1,8 +1,13 @@
 import { WebsiteElement } from "@/types/element";
 
-const HeadingElement = ({ element }: { element: WebsiteElement }) => {
+interface HeadingElementProps {
+  element: WebsiteElement,
+  key?: string | null | undefined
+}
+
+const HeadingElement = ({ element, key }: HeadingElementProps) => {
   return (
-    <h2 className={element.className} id={element.id} data-testid={element.id}>
+    <h2 className={element.className} id={element.id} data-testid={element.id} key={key}>
       {element.text}
     </h2>
   )

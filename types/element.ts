@@ -1,4 +1,4 @@
-export type WebsiteElementType = "Button" | "Text" | "Heading2"
+export type WebsiteElementType = "Button" | "Text" | "Heading2" | "Container"
 
 export interface WebsiteElement {
   type: WebsiteElementType,
