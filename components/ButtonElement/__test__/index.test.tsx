@@ -11,7 +11,6 @@ describe("Button", () => {
         type: "Text",
         id: "test",
         className: "text-center",
-        children: [],
         text: "Hello worl sueduehfefed"
       }
     ],
