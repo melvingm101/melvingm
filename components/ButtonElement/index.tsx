@@ -1,9 +1,5 @@
-import { constructElement } from "@/lib/htmlElement";
-import { WebsiteElement } from "@/types/element";
-
-interface ButtonElementProps {
-  element: WebsiteElement
-}
+import { constructElement } from "@/lib/constructElement";
+import { ButtonElementProps } from "./types";
 
 const ButtonElement = ({ element }: ButtonElementProps) => {
   return (

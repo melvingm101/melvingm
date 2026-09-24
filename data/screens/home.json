@@ -1,0 +1,33 @@
+{
+    "name": "Home screen",
+    "title": "Placeholder Name",
+    "elements": [{
+        "type": "Container",
+        "children": [{
+            "type": "Text",
+            "id": "logo",
+            "className": "",
+            "text": "PLACEHOLDER NAME"
+        },
+        {
+            "type": "Container",
+            "id": "nav-container",
+            "children": [
+                { 
+                    "type": "Link",
+                    "url": "/about",
+                    "children": [{
+                        "type": "Text",
+                        "id": "about-text",
+                        "className": "",
+                        "text": "About"
+                    }],
+                    "id": "about-link"
+                }
+            ]
+        }
+        ],
+        "className": "px-8 py-4",
+        "id": "header-container"
+    }]
+}
