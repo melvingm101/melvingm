@@ -5,7 +5,7 @@ const ScreenElement = ({ currentScreen }: ScreenElementProps) => {
   return (
     <div>
       {currentScreen.elements.map((component) => (
-        constructElement(component)
+        constructElement(component, true)
       ))}
     </div>
   )

@@ -2,9 +2,9 @@ import Link from "next/link";
 import { LinkElementProps } from "./types";
 import { constructElement } from "@/lib/constructElement";
 
-const LinkElement = ({ element, key }: LinkElementProps) => {
+const LinkElement = ({ element }: LinkElementProps) => {
   return (
-    <Link href={element.url} id={element.id} data-testid={element.id} key={key}>
+    <Link href={element.url} id={element.id} data-testid={element.id}>
       {element.children.map(child => constructElement(child, true))}
     </Link>
   )

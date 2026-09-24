@@ -7,6 +7,5 @@ export interface LinkElement extends BaseWebsiteElement {
 }
 
 export interface LinkElementProps {
-  element: LinkElement,
-  key?: string | null
+  element: LinkElement
 }

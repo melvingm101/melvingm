@@ -11,6 +11,7 @@
         },
         {
             "type": "Container",
+            "id": "nav-container",
             "children": [
                 { 
                     "type": "Link",

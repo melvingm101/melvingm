@@ -6,7 +6,6 @@ export interface ButtonElement extends BaseWebsiteElement {
 }
 
 export interface ButtonElementProps {
-  element: ButtonElement,
-  key?: string | null;
+  element: ButtonElement
 }
 
