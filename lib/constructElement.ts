@@ -5,6 +5,7 @@ import TextElement from "@/components/TextElement";
 import HeadingElement from "@/components/HeadingElement";
 import ContainerElement from "@/components/ContainerElement";
 import LinkElement from "@/components/LinkElement";
+import HeaderElement from "@/components/HeaderElement";
 
 export const constructElement = (element: WebsiteElementType, requiresKey = false) => {
   switch (element.type) {
@@ -16,6 +17,8 @@ export const constructElement = (element: WebsiteElementType, requiresKey = fals
       return createElement(ContainerElement, { element, key: requiresKey ? element.id : null });
     case "Link":
       return createElement(LinkElement, { element, key: requiresKey ? element.id : null });
+    case "Header":
+      return createElement(HeaderElement, { element, key: requiresKey ? element.id : null });
     default:
       return createElement(TextElement, { element, key: requiresKey ? element.id : null });
   }

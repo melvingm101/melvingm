@@ -2,7 +2,8 @@
     "name": "Home screen",
     "title": "Placeholder Name",
     "elements": [{
-        "type": "Container",
+        "type": "Header",
+        "alignment": "horizontal",
         "children": [{
             "type": "Text",
             "id": "logo",
